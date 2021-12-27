@@ -22,7 +22,8 @@
     </bean>
 
     <bean id="musicPlayerBean"
-          class="ru.agent_tim.MusicPlayer">
+          class="ru.agent_tim.MusicPlayer"
+          scope="prototype">
         <property name="musicList">
             <list>
                 <ref bean="jazzMusicBean"/>
